@@ -737,3 +737,91 @@ Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'pr
 2024-02-22T05:09:58.336-06:00  INFO 86735 --- [main] net.ultrasist.chambeaya.access.App       : Started App in 4.402 seconds (process running for 4.871)
 2024-02-22T05:09:58.338-06:00  INFO 86735 --- [main] net.ultrasist.chambeaya.access.App       : Starting microservice 'access' in port 9999
 2024-02-22T05:09:58.339-06:00  INFO 86735 --- [main] net.ultrasist.chambeaya.access.App       : microservice version: 0.0.2
+2024-02-22T05:10:53.463-06:00  INFO 86950 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : https://config.chambeaya.ultrasist.net
+2024-02-22T05:10:54.414-06:00  INFO 86950 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=hikari, ValidationMessages, passay, router, profiles=[access], label=master, version=c971890176e43c808df9465278561b6e4beda35e, state=null
+2024-02-22T05:10:54.415-06:00  INFO 86950 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/application-access.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/router.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/passay.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/ValidationMessages.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/hikari.properties'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/application.properties'}]
+2024-02-22T05:10:54.432-06:00  INFO 86950 --- [main] net.ultrasist.chambeaya.access.App       : The following 1 profile is active: "access"
+2024-02-22T05:10:55.008-06:00  INFO 86950 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c02739bb-21e5-30cb-9a17-d5ab8b9458cb
+2024-02-22T05:10:55.039-06:00  INFO 86950 --- [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+2024-02-22T05:10:55.039-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-configClient [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.039-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/application-access.properties [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.039-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/router.properties [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/passay.properties [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/ValidationMessages.properties [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/hikari.properties [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource bootstrapProperties-https://github.com/capacitacion-ultra/chambeaya-properties/application.properties [org.springframework.cloud.bootstrap.config.BootstrapPropertySource] to EncryptableEnumerablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+2024-02-22T05:10:55.040-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.041-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'file [application-access.properties]' via location 'optional:file:./' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.041-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'file [application.properties]' via location 'optional:file:./' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.041-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [file:./application-access.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.041-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource applicationConfig: [file:./application.properties] [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.041-06:00  INFO 86950 --- [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudDefaultProperties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+2024-02-22T05:10:55.271-06:00  INFO 86950 --- [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+2024-02-22T05:10:55.285-06:00  INFO 86950 --- [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+2024-02-22T05:10:55.285-06:00  INFO 86950 --- [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+2024-02-22T05:10:55.531-06:00  INFO 86950 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9999 (http)
+2024-02-22T05:10:55.541-06:00  INFO 86950 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-22T05:10:55.541-06:00  INFO 86950 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-02-22T05:10:55.605-06:00  INFO 86950 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-22T05:10:55.606-06:00  INFO 86950 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1138 ms
+2024-02-22T05:10:55.664-06:00  INFO 86950 --- [main] c.u.j.encryptor.DefaultLazyEncryptor     : String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+2024-02-22T05:10:55.692-06:00  INFO 86950 --- [main] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.key-obtention-iterations, using default value: 1000
+2024-02-22T05:10:55.692-06:00  INFO 86950 --- [main] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.pool-size, using default value: 1
+2024-02-22T05:10:55.692-06:00  INFO 86950 --- [main] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+2024-02-22T05:10:55.692-06:00  INFO 86950 --- [main] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+2024-02-22T05:10:55.692-06:00  INFO 86950 --- [main] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.salt-generator-classname, using default value: org.jasypt.salt.RandomSaltGenerator
+2024-02-22T05:10:55.694-06:00  INFO 86950 --- [main] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.string-output-type, using default value: base64
+2024-02-22T05:10:55.984-06:00  WARN 86950 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accessServiceImpl': Injection of autowired dependencies failed
+2024-02-22T05:10:55.986-06:00  INFO 86950 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-02-22T05:10:56.004-06:00  INFO 86950 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-02-22T05:10:56.038-06:00 ERROR 86950 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'accessServiceImpl': Injection of autowired dependencies failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:489) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942) ~[spring-context-6.0.11.jar!/:6.0.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608) ~[spring-context-6.0.11.jar!/:6.0.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-3.1.2.jar!/:3.1.2]
+	at net.ultrasist.chambeaya.access.App.main(App.java:30) ~[classes!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49) ~[chambeaya-access-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:95) ~[chambeaya-access-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58) ~[chambeaya-access-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:65) ~[chambeaya-access-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'proyecto.message' in value "${proyecto.message}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-6.0.11.jar!/:6.0.11]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-6.0.11.jar!/:6.0.11]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-6.0.11.jar!/:6.0.11]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-6.0.11.jar!/:6.0.11]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:920) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1358) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483) ~[spring-beans-6.0.11.jar!/:6.0.11]
+	... 23 common frames omitted
+
