@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "master" ]
     paths:
-      - '**'
+      - 'application-access.properties'
 jobs:
   deploy:
     name: Redeploy chambeaya-access
