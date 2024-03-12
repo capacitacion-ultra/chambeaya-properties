@@ -19,5 +19,4 @@ jobs:
           port: 22
           script: |
             cd /home/ubuntu/micro-servicios/translated
-            chmod 700 run-chambeaya-access.sh
             ./run-chambeaya-access.sh
