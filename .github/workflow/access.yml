@@ -1,0 +1,23 @@
+name: Redeploy chambeaya-access
+on:
+  workflow_dispatch:
+  push:
+    branches: [ "master" ]
+    paths:
+      - '**'
+jobs:
+  deploy:
+    name: Redeploy chambeaya-access
+    runs-on: ubuntu-latest
+    steps:
+      - name: Execute remote command (last one)
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: ${{ secrets.REMOTE_SRV_IP }}
+          username: ${{ secrets.REMOTE_SRV_USER }}
+          key: ${{ secrets.REMOTE_SRV_PRIV_KEY }}
+          port: 22
+          script: |
+            cd /home/ubuntu/micro-servicios/translated
+            chmod 700 run-chambeaya-access.sh
+            ./run-chambeaya-access.sh
